@@ -2,7 +2,9 @@ import React from 'react';
 import { ButtonRow } from './ButtonRow';
 import { data } from '../data';
 
-export const ButtonTable = () => {
+export const ButtonTable = ({setInitialValue}) => {
+
+    
 
     return (
 
@@ -11,6 +13,7 @@ export const ButtonTable = () => {
                 data.map(({ values }) => (
                     <ButtonRow
                         elements={values}
+                        setInitialValue={setInitialValue}
                     />
                 ))
             }

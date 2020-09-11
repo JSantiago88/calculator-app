@@ -4,14 +4,14 @@ import { Display } from './components/Display';
 
 export const Calculator = () => {
 
-    const [initialValue] = useState(123);
+    const [initialValue, setInitialValue] = useState(0);
 
     return (
         <div className="calculator">
             <h2>Casio</h2>
             <Display initialValue={initialValue} />
             <hr />
-            <ButtonTable />
+            <ButtonTable setInitialValue={setInitialValue}/>
         </div>
     );
 };

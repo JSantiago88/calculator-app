@@ -2,8 +2,8 @@ import React from 'react';
 
 import { Button } from "./Button";
 
-export const ButtonRow = ({ elements }) => {
-
+export const ButtonRow = ({ elements , setInitialValue}) => {
+    
     return (
         <div className="button-row">
             {
@@ -11,6 +11,7 @@ export const ButtonRow = ({ elements }) => {
                     <Button
                         key={element.value}
                         values={element}
+                        setInitialValue={setInitialValue}
                     />
                 ))
             }
