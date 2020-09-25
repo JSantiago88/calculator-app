@@ -1,19 +1,17 @@
 import React from 'react';
 import { ButtonRow } from './ButtonRow';
-import { data } from '../data';
+import { data as rows } from '../data';
 
-export const ButtonTable = ({setInitialValue}) => {
-
-    
+export const ButtonTable = ({ handleSelectButton }) => {
 
     return (
-
         <div className="button-table">
             {
-                data.map(({ values }) => (
+                rows.map(({ row, values }) => (
                     <ButtonRow
-                        elements={values}
-                        setInitialValue={setInitialValue}
+                        key={row}
+                        buttons={values}
+                        handleSelectButton={handleSelectButton}
                     />
                 ))
             }

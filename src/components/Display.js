@@ -1,6 +1,6 @@
 import React from 'react';
 
-export const Display = ({ initialValue }) => {
+export const Display = ({ initialValue = [0] }) => {
 
     return (
         <div className='bg-display'>

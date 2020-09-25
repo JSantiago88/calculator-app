@@ -1,15 +1,15 @@
 import React from 'react';
 
-export const Button = ({ values, setInitialValue }) => {
-
-    const handleInputChange = ( e) => {
-       
-        setInitialValue( values.value );
-    }
+export const Button = ({ value, styles, handleSelectButton }) => {
 
     return (
         <>
-            <button className={values.styles} onClick={ handleInputChange }>{values.value}</button>
+            <button
+                className={styles}
+                onClick={handleSelectButton}
+            >
+                {value}
+            </button>
         </>
     )
 };

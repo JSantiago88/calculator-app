@@ -4,19 +4,19 @@ export const data = [
         values: [
             {
                 value: '+',
-                styles: 'btn' 
+                styles: 'btn'
             },
             {
                 value: '-',
-                styles: 'btn' 
+                styles: 'btn'
             },
             {
                 value: 'x',
-                styles: 'btn' 
+                styles: 'btn'
             },
             {
                 value: '/',
-                styles: 'btn' 
+                styles: 'btn'
             }
         ]
     },
@@ -25,19 +25,19 @@ export const data = [
         values: [
             {
                 value: '7',
-                styles: 'btn' 
+                styles: 'btn'
             },
             {
                 value: '8',
-                styles: 'btn' 
+                styles: 'btn'
             },
             {
                 value: '9',
-                styles: 'btn' 
+                styles: 'btn'
             },
             {
                 value: '=',
-                styles: 'btn btn-blue' 
+                styles: 'btn btn-blue'
             }
         ]
     },
@@ -46,15 +46,15 @@ export const data = [
         values: [
             {
                 value: '4',
-                styles: 'btn' 
+                styles: 'btn'
             },
             {
                 value: '5',
-                styles: 'btn' 
+                styles: 'btn'
             },
             {
                 value: '6',
-                styles: 'btn' 
+                styles: 'btn'
             }
         ]
     },
@@ -63,15 +63,15 @@ export const data = [
         values: [
             {
                 value: '1',
-                styles: 'btn' 
+                styles: 'btn'
             },
             {
                 value: '2',
-                styles: 'btn' 
+                styles: 'btn'
             },
             {
                 value: '3',
-                styles: 'btn' 
+                styles: 'btn'
             }
         ]
     },
@@ -80,15 +80,15 @@ export const data = [
         values: [
             {
                 value: '0',
-                styles: 'btn' 
+                styles: 'btn'
             },
             {
                 value: '.',
-                styles: 'btn' 
+                styles: 'btn'
             },
             {
                 value: 'AC',
-                styles: 'btn btn-red' 
+                styles: 'btn btn-red'
             }
         ]
     }
