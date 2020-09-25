@@ -83,7 +83,7 @@ export const data = [
                 styles: 'btn'
             },
             {
-                value: '.',
+                value: ',',
                 styles: 'btn'
             },
             {

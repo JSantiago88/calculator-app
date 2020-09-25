@@ -27,17 +27,17 @@ export const Calculator = () => {
                 addOperator(value);
                 break;
             case '=':
-                getResult(initialValue);
+                setInitialValue(getResult(initialValue));
                 break;
             case 'AC':
                 setInitialValue([0]);
                 break;
-            case '.':
-                //decimal
+            case ',':
+                addOperator(value);
                 break;
             default:
                 setInitialValue((cats) => {
-                    return cats[0] === 0 ? [parseInt(value)] : [...cats, parseInt(value)];
+                    return cats[0] === 0 ? [parseFloat(value)] : [...cats, parseFloat(value)];
                 });
                 break;
         }
@@ -49,20 +49,21 @@ export const Calculator = () => {
             if (cats[cats.length - 1] === '+' ||
                 cats[cats.length - 1] === '-' ||
                 cats[cats.length - 1] === 'x' ||
-                cats[cats.length - 1] === '/') return [...cats];
+                cats[cats.length - 1] === '/' ||
+                cats[cats.length - 1] === ',') return [...cats];
 
-            console.log(value);
             return cats[0] === 0 ||
                 cats[0] === '+' ||
                 cats[0] === '-' ||
                 cats[0] === 'x' ||
-                cats[0] === '/' ? [0] : [...cats, value];
+                cats[0] === '/' ||
+                cats[0] === ',' ? [0] : [...cats, value];
         });
     };
 
     return (
         <div className="calculator">
-            <h2>Casio</h2>
+            <h2>Calculator</h2>
             <Display initialValue={initialValue} />
             <hr />
             <ButtonTable handleSelectButton={handleSelectButton} />

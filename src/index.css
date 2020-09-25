@@ -26,9 +26,10 @@ html, body {
     background-color: black;
     color: white;
     width: 80%;
-    text-align: end;
     margin: 0 auto;
     border-radius: 5px;
+    overflow: hidden;
+    text-align: end;
 }
 
 .bg-display > h1 {
