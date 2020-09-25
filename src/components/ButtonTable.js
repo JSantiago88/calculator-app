@@ -1,8 +1,10 @@
 import React from 'react';
-import { ButtonRow } from './ButtonRow';
+import PropTypes from 'prop-types';
+
+import ButtonRow from './ButtonRow';
 import { data as rows } from '../data';
 
-export const ButtonTable = ({ handleSelectButton }) => {
+const ButtonTable = ({ handleSelectButton }) => {
 
     return (
         <div className="button-table">
@@ -18,3 +20,9 @@ export const ButtonTable = ({ handleSelectButton }) => {
         </div>
     );
 };
+
+ButtonTable.propTypes = {
+    handleSelectButton: PropTypes.func.isRequired,
+}
+
+export default ButtonTable;

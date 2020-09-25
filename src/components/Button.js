@@ -1,6 +1,7 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
-export const Button = ({ value, styles, handleSelectButton }) => {
+const Button = ({ value, styles, handleSelectButton }) => {
 
     return (
         <>
@@ -13,3 +14,11 @@ export const Button = ({ value, styles, handleSelectButton }) => {
         </>
     )
 };
+
+Button.propTypes = {
+    handleSelectButton: PropTypes.func.isRequired,
+    value: PropTypes.string.isRequired,
+    styles: PropTypes.string.isRequired
+}
+
+export default Button;

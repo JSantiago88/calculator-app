@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Test in <ButtonRow /> should Button the component correctly 1`] = `
+<div
+  className="button-row"
+/>
+`;
+
+exports[`should Button the component correctly 1`] = `
+<div
+  className="button-row"
+/>
+`;

@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 
-import { ButtonTable } from './components/ButtonTable';
-import { Display } from './components/Display';
+import ButtonTable from './components/ButtonTable';
+import  Display  from './components/Display';
 import { getResult } from './helpers/getResult';
 
 export const Calculator = () => {
@@ -69,5 +69,4 @@ export const Calculator = () => {
             <ButtonTable handleSelectButton={handleSelectButton} />
         </div>
     );
-
 };
