@@ -1,0 +1,116 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Test in <ButtonTable /> should ButtonTable the component correctly 1`] = `
+<div
+  className="button-table"
+>
+  <ButtonRow
+    buttons={
+      Array [
+        Object {
+          "styles": "btn",
+          "value": "+",
+        },
+        Object {
+          "styles": "btn",
+          "value": "-",
+        },
+        Object {
+          "styles": "btn",
+          "value": "x",
+        },
+        Object {
+          "styles": "btn",
+          "value": "/",
+        },
+      ]
+    }
+    handleSelectButton={[Function]}
+    key="1"
+  />
+  <ButtonRow
+    buttons={
+      Array [
+        Object {
+          "styles": "btn",
+          "value": "7",
+        },
+        Object {
+          "styles": "btn",
+          "value": "8",
+        },
+        Object {
+          "styles": "btn",
+          "value": "9",
+        },
+        Object {
+          "styles": "btn btn-blue",
+          "value": "=",
+        },
+      ]
+    }
+    handleSelectButton={[Function]}
+    key="2"
+  />
+  <ButtonRow
+    buttons={
+      Array [
+        Object {
+          "styles": "btn",
+          "value": "4",
+        },
+        Object {
+          "styles": "btn",
+          "value": "5",
+        },
+        Object {
+          "styles": "btn",
+          "value": "6",
+        },
+      ]
+    }
+    handleSelectButton={[Function]}
+    key="3"
+  />
+  <ButtonRow
+    buttons={
+      Array [
+        Object {
+          "styles": "btn",
+          "value": "1",
+        },
+        Object {
+          "styles": "btn",
+          "value": "2",
+        },
+        Object {
+          "styles": "btn",
+          "value": "3",
+        },
+      ]
+    }
+    handleSelectButton={[Function]}
+    key="4"
+  />
+  <ButtonRow
+    buttons={
+      Array [
+        Object {
+          "styles": "btn",
+          "value": "0",
+        },
+        Object {
+          "styles": "btn",
+          "value": ",",
+        },
+        Object {
+          "styles": "btn btn-red",
+          "value": "AC",
+        },
+      ]
+    }
+    handleSelectButton={[Function]}
+    key="5"
+  />
+</div>
+`;

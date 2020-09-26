@@ -1,0 +1,12 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Test in <Button /> should Button the component correctly 1`] = `
+<Fragment>
+  <button
+    className="btn"
+    onClick={[Function]}
+  >
+    5
+  </button>
+</Fragment>
+`;

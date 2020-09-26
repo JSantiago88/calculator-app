@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
 
-import { ButtonTable } from './components/ButtonTable';
-import { Display } from './components/Display';
+import ButtonTable from './components/ButtonTable';
+import Display from './components/Display';
 import { getResult } from './helpers/getResult';
 
-export const Calculator = () => {
+const Calculator = () => {
 
     const [initialValue, setInitialValue] = useState([0]);
 
@@ -13,7 +13,7 @@ export const Calculator = () => {
             parseInt(e.target.innerText) :
             e.target.innerText;
 
-        switch (value) { //step
+        switch (value) {
             case '+':
                 addOperator(value);
                 break;
@@ -27,7 +27,9 @@ export const Calculator = () => {
                 addOperator(value);
                 break;
             case '=':
-                setInitialValue(getResult(initialValue));
+                if (initialValue.length > 1) {
+                    setInitialValue(getResult(initialValue));
+                }
                 break;
             case 'AC':
                 setInitialValue([0]);
@@ -69,5 +71,6 @@ export const Calculator = () => {
             <ButtonTable handleSelectButton={handleSelectButton} />
         </div>
     );
-
 };
+
+export default Calculator;

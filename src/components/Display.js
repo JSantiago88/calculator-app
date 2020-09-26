@@ -1,6 +1,7 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
-export const Display = ({ initialValue = [0] }) => {
+const Display = ({ initialValue = [0] }) => {
 
     return (
         <div className='bg-display'>
@@ -8,3 +9,10 @@ export const Display = ({ initialValue = [0] }) => {
         </div>
     );
 };
+
+
+Display.propTypes = {
+    initialValue: PropTypes.array.isRequired
+};
+
+export default Display;

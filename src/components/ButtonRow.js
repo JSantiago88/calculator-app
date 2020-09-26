@@ -1,9 +1,10 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
-import { Button } from "./Button";
+import Button from "./Button";
 
-export const ButtonRow = ({ buttons , handleSelectButton}) => {
-    
+const ButtonRow = ({ buttons = [], handleSelectButton }) => {
+
     return (
         <div className="button-row">
             {
@@ -18,3 +19,10 @@ export const ButtonRow = ({ buttons , handleSelectButton}) => {
         </div>
     );
 };
+
+ButtonRow.propTypes = {
+    handleSelectButton: PropTypes.func.isRequired,
+    buttons: PropTypes.array.isRequired,
+}
+
+export default ButtonRow;
